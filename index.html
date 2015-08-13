@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+  <head>
+    <title>Anagram Finder</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="author" content="Akshay Ravikumar">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  </head>
+  <body>
+
+<center>
+<form class="pure-form pure-form-stacked" style = "width: 30%">
+    <fieldset>
+        <label for="email">Which word would you like to check?</label>
+        <input type="text" class="pure-input-1" id="inputWord" placeholder="">
+
+        <label for="email">At most how many letters would you like to add?</label>
+        <input type="number" class="pure-input-1-3" id="inputNum" placeholder="">
+    </fieldset>
+</form>
+<button class="pure-button pure-button-primary" id = "submitForm">Find Steals!</button>  <br/>
+<br/>
+
+<div id = "numAns" style = "font-family: 'Open Sans', sans-serif; "> Results will show here: </div> 
+
+<div id = "hover" style = "font-family: 'Open Sans', sans-serif;"> Hover over a word to see what letters you need. </div> 
+
+</center>
+
+
+<center>
+<ul id = "results" style = "padding: 0; horizontal-align: center; text-align: center; height: 300px; width: 20%; overflow-y:scroll; font-family: 'Open Sans', sans-serif; list-style-type:none; border-style: solid; border-width: 4px;">
+</ul>
+</center>
+
+</body>
+<script src="anagrams.js"></script>
+</html>
