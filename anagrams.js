@@ -88,7 +88,7 @@ function getAnagrams(input, diff) {
       }
     }
 
-    var message = "To get <b>" + poss + "</b>, you need the following letters: <br/>";
+    var message = "To get <b>" + poss + "</b>, you need the following letters: ";
     for (var ind = 0; ind < lettersNeeded.length; ind++) {
       message = message + "<b>" + lettersNeeded[ind].toUpperCase() + "</b>";
       if (ind != lettersNeeded.length - 1) {
@@ -102,7 +102,7 @@ function getAnagrams(input, diff) {
   }); 
 
   $(document).on("mouseleave touchend", "li.wordans", function() {
-    $("#hover").html("Hover over a word to see what letters you need. <br/> <br/>");
+    $("#hover").html("Hover over a word to see what letters you need. ");
   });
 
 
