@@ -65,7 +65,7 @@ function getAnagrams(input, diff) {
   
 }
 
-  $(document).on("mouseenter", "li.wordans", function(event) {
+  $(document).on("mouseenter touchstart", "li.wordans", function(event) {
     var poss = $(event.target).text();
     var input = currentword;
     var wordFreq = {};
@@ -101,7 +101,7 @@ function getAnagrams(input, diff) {
     $("#hover").html(message);
   }); 
 
-  $(document).on("mouseleave", "li.wordans", function() {
+  $(document).on("mouseleave touchend", "li.wordans", function() {
     $("#hover").html("Hover over a word to see what letters you need. <br/> <br/>");
   });
 
