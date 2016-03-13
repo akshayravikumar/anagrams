@@ -2,12 +2,12 @@ var words = ["a","ab","ac","ad","ah","ai","al","am","an","as","at","aw","ax","ay
 
 $("#submitForm").click(function () {
   $("#results").empty();
-  getAnagrams($("#inputWord").val(), $("#inputNum").val());
+  getAnagrams($("#inputWord").val());
 });
 
 var currentword = "";
 
-function getAnagrams(input, diff) {
+function getAnagrams(input) {
   input = input.toLowerCase();
   currentword = input;
   var numans = 0;
@@ -19,11 +19,7 @@ function getAnagrams(input, diff) {
     $("#numAns").text("Please enter a real word!");
     return;
   }
-  console.log(diff);
-  if (diff < 0 || diff == null) {
-    $("#numAns").text("Please enter a positive integer!");
-    return;
-  }
+
   var wordFreq = {};
   var i = input.length;
   while (i--) {
@@ -46,7 +42,7 @@ function getAnagrams(input, diff) {
           delete freq[poss[i]];
         }
       }
-       if (Object.keys(freq).length == 0 && (poss.length - input.length) <= diff && (poss.length - input.length) >= 0 && poss.length > 0) {
+       if (Object.keys(freq).length == 0 && (poss.length - input.length) >= 0 && poss.length > 0) {
         $("#results").append("<li class = \"wordans\">" + poss.trim() + "</li>");
         numans = numans + 1;
         done = true;
