@@ -1,0 +1,27 @@
+#title {
+	font-size: 45px; 
+	margin-top: 10px; 
+}
+
+#inputForm {
+	width: 100%;
+}
+
+#submitForm {
+	width: 100%;
+}
+
+#hover {
+	height: 80px;
+}
+
+#results {
+	padding: 0; 
+	horizontal-align: center; 
+	text-align: center; 
+	height: 250px; 
+	overflow-y:scroll; 
+	list-style-type: none; 
+	border-style: solid; 
+	border-width: 4px;
+}

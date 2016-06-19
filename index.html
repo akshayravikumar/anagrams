@@ -9,6 +9,7 @@
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+  <link rel="stylesheet" href="anagrams.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
@@ -18,34 +19,41 @@
 <body>
 
 
-  <div class = "row">
+  <div class="row">
 
     <div class = "col m4 s1">  &nbsp;</div>
 
     <div class = "col m4 s10">
 
-      <div style = "font-size: 45px; margin-top: 10px" class = "center-align;"> Anagrams Finder </div>
+      <div id = "title" class = "center-align"> Anagrams Finder </div>
 
-      <form style = "width: 100%" class = "center-align">
-        <div class="input-field">
+      <br/>
+      
+      <form id = "inputForm">
+        <div class = "input-field">
           <label for = "inputWord">Which word?</label>
-          <input type="text" id = "inputWord" value = "">
+          <input type = "text" id = "inputWord" value = "">
         </div>
       </form>
-      <button class="waves-effect waves-light btn-large center-align deep-orange lighten-2" id = "submitForm" style = "width: 100%">Find Steals!</button>  <br/>
+
+      <button class = "waves-effect waves-light btn-large deep-orange lighten-2" id = "submitForm">
+        Find Steals!
+      </button>  
+
+      <br/>
       <br/>
 
       <div id = "numAns" class = "center-align"> Results will show here: </div>
 
-      <div id = "hover" class = "center-align" style = "height: 60px"> Hover over a word to see what letters you need.  </div>
-
-    </center>
+      <div id = "hover" class = "center-align"> 
+        Hover over a word to see what letters you need.  
+      </div>
 
     <br/>
+    
+    <ul id = "results">
+    </ul>
 
-    <center>
-      <ul id = "results" style = "padding: 0; horizontal-align: center; text-align: center; height: 250px; overflow-y:scroll; list-style-type:none; border-style: solid; border-width: 4px;">
-      </ul>
     </div>
   </div>
 
