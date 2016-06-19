@@ -1,58 +1,57 @@
  <!DOCTYPE html>
-  <head>
-    <title>Anagram Finder</title>
+ <head>
+  <title>Anagram Finder</title>
 
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <meta name="author" content="Akshay Ravikumar">
-      <!-- Compiled and minified CSS -->
+  <meta name="author" content="Akshay Ravikumar">
+  <!-- Compiled and minified CSS -->
 
-       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 
-   <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
 
 
-  </head>
-  <body>
-
-
-<div class = "row">
+  <div class = "row">
 
     <div class = "col m4 s1">  &nbsp;</div>
 
-     <div class = "col m4 s10">
+    <div class = "col m4 s10">
 
-        <div style = "font-size: 45px" class = "center-align"> Anagrams Finder </div>
+      <div style = "font-size: 45px; margin-top: 10px" class = "center-align;"> Anagrams Finder </div>
 
-    <form style = "width: 100%" class = "center-align">
+      <form style = "width: 100%" class = "center-align">
         <div class="input-field">
-            <label for = "inputWord">Which word?</label>
-            <input type="text" id = "inputWord" value = "">
+          <label for = "inputWord">Which word?</label>
+          <input type="text" id = "inputWord" value = "">
         </div>
-    </form>
-    <button class="waves-effect waves-light btn-large center-align deep-orange lighten-2" id = "submitForm" style = "width: 100%">Find Steals!</button>  <br/>
-    <br/>
+      </form>
+      <button class="waves-effect waves-light btn-large center-align deep-orange lighten-2" id = "submitForm" style = "width: 100%">Find Steals!</button>  <br/>
+      <br/>
 
-    <div id = "numAns" class = "center-align"> Results will show here: </div>
+      <div id = "numAns" class = "center-align"> Results will show here: </div>
 
-    <div id = "hover" class = "center-align" style = "height: 60px"> Hover over a word to see what letters you need.  </div>
+      <div id = "hover" class = "center-align" style = "height: 60px"> Hover over a word to see what letters you need.  </div>
 
     </center>
 
     <br/>
 
     <center>
-    <ul id = "results" style = "padding: 0; horizontal-align: center; text-align: center; height: 250px; overflow-y:scroll; list-style-type:none; border-style: solid; border-width: 4px;">
-    </ul>
-</div>
-</div>
+      <ul id = "results" style = "padding: 0; horizontal-align: center; text-align: center; height: 250px; overflow-y:scroll; list-style-type:none; border-style: solid; border-width: 4px;">
+      </ul>
+    </div>
+  </div>
 
- <div class = "col m4 s1"> </div>
+  <div class = "col m4 s1"> </div>
 </body>
+
+<script src="words.js"></script>
 <script src="anagrams.js"></script>
 </html>
